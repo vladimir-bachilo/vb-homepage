@@ -5,7 +5,7 @@ import {
 } from '@chakra-ui/react'
 import { theme } from '../lib/theme'
 
-export default function Chakra({ cookies, children }) {
+export const Chakra = ({ cookies, children }) => {
   const colorModeManager =
     typeof cookies === 'string'
       ? cookieStorageManagerSSR(cookies)

@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import { Box, Container } from '@chakra-ui/react'
 import { Footer } from '../footer'
+import NavBar from '../navbar'
 
-export const Layout = ({ children }) => {
+export const Layout = ({ children, router }) => {
   return (
     <Box as="main" pb={8}>
       <Head>
@@ -15,6 +16,8 @@ export const Layout = ({ children }) => {
         <meta property="og:type" content="website" />
         <title>Vladimir Bachilo - Homepage</title>
       </Head>
+
+      <NavBar path={router.asPath} />
 
       <Container maxW="container.md" pt={14}>
         {children}

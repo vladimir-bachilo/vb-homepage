@@ -96,8 +96,8 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2020</BioYear>
-          Completed the Bachelor&apos;s Program in the Graduate School of
-          Information Science at IBA Institute
+          Completed the Bachelor&apos;s Program of Information Science at IBA
+          Institute
         </BioSection>
         <BioSection>
           <BioYear>2018</BioYear>
