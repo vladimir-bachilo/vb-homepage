@@ -1,0 +1,35 @@
+import { forwardRef } from 'react'
+import { Box, Spinner } from '@chakra-ui/react'
+
+export const LaptopSpinner = () => (
+  <Spinner
+    size="xl"
+    position="absolute"
+    left="50%"
+    top="50%"
+    ml="calc(0px - var(--spinner-size) / 2)"
+    mt="calc(0px - var(--spinner-size))"
+  />
+)
+
+export const LaptopContainer = forwardRef(({ children }, ref) => (
+  <Box
+    ref={ref}
+    m="auto"
+    mt={['-80px', '-180px', '-220px']}
+    mb={['-40px', '-120px', '-140px']}
+    w={[280, 480, 640]}
+    h={[280, 480, 640]}
+    position="relative"
+  >
+    {children}
+  </Box>
+))
+
+export const Loader = () => {
+  return (
+    <LaptopContainer>
+      <LaptopSpinner />
+    </LaptopContainer>
+  )
+}

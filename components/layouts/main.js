@@ -1,7 +1,14 @@
 import Head from 'next/head'
+import dynamic from 'next/dynamic'
 import { Box, Container } from '@chakra-ui/react'
 import { Footer } from '../footer'
 import NavBar from '../navbar'
+import { Loader } from '../laptop-loader'
+
+const LazyLaptop = dynamic(() => import('../laptop'), {
+  ssr: false,
+  loading: () => <Loader />
+})
 
 export const Layout = ({ children, router }) => {
   return (
@@ -20,8 +27,8 @@ export const Layout = ({ children, router }) => {
       <NavBar path={router.asPath} />
 
       <Container maxW="container.md" pt={14}>
+        <LazyLaptop />
         {children}
-
         <Footer />
       </Container>
     </Box>
