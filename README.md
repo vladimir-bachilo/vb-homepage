@@ -1,3 +1,7 @@
+# Vladimir's Homepage
+
+[https://vb-homepage.vercel.app/](https://vb-homepage.vercel.app/)
+
 ## Stack
 
 - [Next.js](https://nextjs.org/) - A React framework with hybrid static & server rendering, and route pre-fetching, etc.
@@ -18,3 +22,13 @@ $PROJECT_ROOT
 │   # Static files for images and 3d model file
 └── public
 ```
+
+## License
+
+MIT License.
+
+You can create your own homepage for free without notifying me by forking this project under the following conditions:
+
+- Add a link to [my homepage](https://vb-homepage.vercel.app/)
+
+Check out [LICENSE](./LICENSE) for more detail.
