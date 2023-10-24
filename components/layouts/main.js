@@ -18,6 +18,8 @@ export const Layout = ({ children, router }) => {
         <meta name="description" content="Vladimir's homepage" />
         <meta name="author" content="Vladimir Bachilo" />
         <meta name="author" content="vladimir-bachilo" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <meta property="og:site_name" content="Vladimir Bachilo" />
         <meta name="og:title" content="Vladimir Bachilo" />
         <meta property="og:type" content="website" />
