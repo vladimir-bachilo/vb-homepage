@@ -1,3 +1,4 @@
+import NextLink from 'next/link'
 import {
   Link,
   Container,
@@ -9,6 +10,7 @@ import {
   useColorModeValue,
   chakra
 } from '@chakra-ui/react'
+import { ChevronRightIcon } from '@chakra-ui/icons'
 import { Paragraph } from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import { Layout } from '../components/layouts/article'
@@ -80,6 +82,18 @@ const Home = () => (
           hanging out with his family.
         </Paragraph>
       </Section>
+
+      <Box align="center" my={4}>
+        <Button
+          as={NextLink}
+          href="/works"
+          scroll={false}
+          rightIcon={<ChevronRightIcon />}
+          colorScheme="teal"
+        >
+          My portfolio
+        </Button>
+      </Box>
 
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
