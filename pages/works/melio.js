@@ -61,6 +61,14 @@ const Work = () => (
 
       <UnorderedList my={4}>
         <ListItem>
+          <Link href="https://www.usatoday.com/money/blueprint/business/finance/best-free-accounting-software/">
+            <Badge mr={2}>USA Today</Badge>
+            Best Free Accounting Software in 2024
+            <ExternalLinkIcon mx="2px" />
+          </Link>
+        </ListItem>
+
+        <ListItem>
           <Link href="https://thefinancialtechnologyreport.com/the-top-100-financial-technology-companies-of-2023/">
             <Badge mr={2}>The Financial TR</Badge>
             The Top 100 Financial Technology Companies of 2023
