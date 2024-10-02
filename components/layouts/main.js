@@ -23,7 +23,7 @@ export const Layout = ({ children, router }) => {
         <meta property="og:site_name" content="Vladimir Bachilo" />
         <meta name="og:title" content="Vladimir Bachilo" />
         <meta property="og:type" content="website" />
-        <title>Vladimir Bachilo - Homepage</title>
+        <title>Vladimir Bachilo</title>
       </Head>
 
       <NavBar path={router.asPath} />

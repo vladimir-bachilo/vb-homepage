@@ -25,8 +25,7 @@ const Works = () => (
             title="Venue Planner"
             thumbnail={thumbVenuePlanner}
           >
-            Event planning software, that offers integrated safety and security
-            planning in an intuitive, visually driven and auditable programme.
+            World&apos;s first smart event planning software.
           </WorkGridItem>
         </Section>
       </SimpleGrid>

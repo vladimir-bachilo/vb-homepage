@@ -11,10 +11,10 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { Paragraph } from '../components/paragraph'
-import { BioSection, BioYear } from '../components/bio'
+import { BioYear } from '../components/bio'
 import { Layout } from '../components/layouts/article'
 import { Section } from '../components/section'
-import { IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import Image from 'next/image'
 
 const Home = () => (
@@ -28,7 +28,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m a full-stack developer based in Belarus!
+        Hello, there!
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -66,14 +66,19 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Work
+          Introduction
         </Heading>
         <Paragraph>
-          Vladimir is a freelance and a full-stack developer based in Minsk with
-          a passion for building digital services/stuff he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his family.
+          I&apos;m a full-stack developer with a passion for building
+          digital solutions that make a difference. I specialize in launching
+          products from concept to completion, with skills that span planning,
+          design, and solving real-world problems with code.
+        </Paragraph>
+        <Paragraph>
+          Beyond programming, I enjoy photography and traveling. Currently based
+          in Minsk, I&apos;m always open to connecting - whether you&apos;re
+          interested in collaborating or just grabbing a coffee, feel free to
+          reach out!
         </Paragraph>
       </Section>
 
@@ -91,44 +96,45 @@ const Home = () => (
 
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-          Bio
+          Timeline
         </Heading>
-        <BioSection>
+        <Box>
           <BioYear>1997</BioYear>
-          Born in Minsk, Belarus.
-        </BioSection>
-        <BioSection>
+          <Paragraph>&#8226; Born in Minsk, Belarus.</Paragraph>
+        </Box>
+        <Box>
           <BioYear>2018</BioYear>
-          Completed the Bachelor&apos;s Program of International Law at
-          Belarusian State University
-        </BioSection>
-        <BioSection>
+          <Paragraph>
+            &#8226; Graduated with a Bachelor&apos;s degree in International Law
+            from BSU.
+          </Paragraph>
+          <Paragraph>
+            &#8226;{' '}
+            <Link href="https://github.com/rolling-scopes/school/blob/gh-pages/2018Q1/Uladzimir_Bachyla.pdf">
+              Completed
+            </Link>{' '}
+            the Rolling Scopes School course.
+          </Paragraph>
+          <Paragraph>&#8226; Started working at IBA Group.</Paragraph>
+        </Box>
+        <Box>
           <BioYear>2020</BioYear>
-          Completed the Bachelor&apos;s Program of Information Science at IBA
-          Institute
-        </BioSection>
-        <BioSection>
-          <BioYear>2018</BioYear>
-          Worked at IBA Group! Belarus
-        </BioSection>
-        <BioSection>
-          <BioYear>2019 to present</BioYear>
-          Working as a full-stack developer at SoftTeco
-        </BioSection>
+          <Paragraph>
+            &#8226; Earned a Bachelor&apos;s degree in Information Science from
+            IBA Institute.
+          </Paragraph>
+        </Box>
+        <Box>
+          <BioYear>2019 - Present</BioYear>
+          <Paragraph>
+            &#8226; Working as a full-stack developer at SoftTeco.
+          </Paragraph>
+        </Box>
       </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          I ♥
-        </Heading>
-        <Paragraph>
-          Art, Music, Driving, Photography, Machine Learning
-        </Paragraph>
-      </Section>
-
-      <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          On the web
+          Find me on
         </Heading>
         <List>
           <ListItem>
@@ -138,7 +144,7 @@ const Home = () => (
                 colorScheme="teal"
                 leftIcon={<IoLogoGithub />}
               >
-                @vladimir-bachilo
+                GitHub
               </Button>
             </Link>
           </ListItem>
@@ -149,11 +155,28 @@ const Home = () => (
                 colorScheme="teal"
                 leftIcon={<IoLogoInstagram />}
               >
-                @one.crew
+                Instagram
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://www.linkedin.com/in/bachilo" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoLogoLinkedin />}
+              >
+                Linkedin
               </Button>
             </Link>
           </ListItem>
         </List>
+        <Box pt={'0.7em'}>
+          Or mail me at{' '}
+          <Link href="mailto:v.bachilo.work@gmail.com" target="_blank">
+            v.bachilo.work@gmail.com
+          </Link>
+        </Box>
       </Section>
     </Container>
   </Layout>
