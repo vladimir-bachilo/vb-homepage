@@ -5,16 +5,15 @@ import {
   Heading,
   Box,
   Button,
-  List,
-  ListItem,
+  Flex,
   useColorModeValue
 } from '@chakra-ui/react'
-import { ChevronRightIcon } from '@chakra-ui/icons'
 import { Paragraph } from '../components/paragraph'
 import { BioYear } from '../components/bio'
 import { Layout } from '../components/layouts/article'
 import { Section } from '../components/section'
 import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+import { AiFillSpotify } from 'react-icons/ai'
 import Image from 'next/image'
 
 const Home = () => (
@@ -69,10 +68,15 @@ const Home = () => (
           Introduction
         </Heading>
         <Paragraph>
-          I&apos;m a full-stack developer with a passion for building
-          digital solutions that make a difference. I specialize in launching
-          products from concept to completion, with skills that span planning,
-          design, and solving real-world problems with code.
+          I&apos;m a full-stack developer with a passion for building digital
+          solutions that make a difference. I specialize in launching products
+          from concept to completion, with skills that span planning, design,
+          and solving real-world problems with code. Explore my full portfolio
+          of projects{' '}
+          <Link as={NextLink} href="/works" scroll={false}>
+            here
+          </Link>
+          .
         </Paragraph>
         <Paragraph>
           Beyond programming, I enjoy photography and traveling. Currently based
@@ -81,18 +85,6 @@ const Home = () => (
           reach out!
         </Paragraph>
       </Section>
-
-      <Box align="center" my={4}>
-        <Button
-          as={NextLink}
-          href="/works"
-          scroll={false}
-          rightIcon={<ChevronRightIcon />}
-          colorScheme="teal"
-        >
-          My portfolio
-        </Button>
-      </Box>
 
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
@@ -136,8 +128,8 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Find me on
         </Heading>
-        <List>
-          <ListItem>
+        <Flex justifyContent="space-between" flexWrap="wrap">
+          <Box>
             <Link href="https://github.com/vladimir-bachilo" target="_blank">
               <Button
                 variant="ghost"
@@ -147,8 +139,8 @@ const Home = () => (
                 GitHub
               </Button>
             </Link>
-          </ListItem>
-          <ListItem>
+          </Box>
+          <Box>
             <Link href="https://instagram.com/one.crew" target="_blank">
               <Button
                 variant="ghost"
@@ -158,8 +150,8 @@ const Home = () => (
                 Instagram
               </Button>
             </Link>
-          </ListItem>
-          <ListItem>
+          </Box>
+          <Box>
             <Link href="https://www.linkedin.com/in/bachilo" target="_blank">
               <Button
                 variant="ghost"
@@ -169,8 +161,22 @@ const Home = () => (
                 Linkedin
               </Button>
             </Link>
-          </ListItem>
-        </List>
+          </Box>
+          <Box>
+            <Link
+              href="https://open.spotify.com/user/d1dli1di76w482fwy1t47wz5w"
+              target="_blank"
+            >
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<AiFillSpotify />}
+              >
+                Spotify
+              </Button>
+            </Link>
+          </Box>
+        </Flex>
         <Box pt={'0.7em'}>
           Or mail me at{' '}
           <Link href="mailto:v.bachilo.work@gmail.com" target="_blank">
