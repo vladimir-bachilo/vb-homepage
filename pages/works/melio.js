@@ -21,12 +21,11 @@ const Work = () => (
         Melio <Badge>2019-</Badge>
       </Title>
       <Paragraph>
-        Melio allows businesses to manage their B2B payments and receivables
-        digitally. It offers a single, integrated solution that allows
-        businesses to make and receive payments – helping with cash flow needs,
-        reducing or eliminating late payment costs, and saving time spent on
-        administrative payment-related tasks. I joined the project to work on a
-        huge list of features they are developing.
+        Melio enables businesses to streamline their B2B payments and
+        receivables through a fully digital platform. It provides an all-in-one
+        solution for sending and receiving payments, helping to optimize cash
+        flow, minimize late payment fees, and reduce the time spent on
+        administrative tasks. I joined the project to contribute to the development of an extensive list of new features.
       </Paragraph>
       <List ml={4} my={4}>
         <ListItem>

@@ -18,11 +18,13 @@ const Work = () => (
         Venue Planner <Badge>2018-2019</Badge>
       </Title>
       <Paragraph>
-        Venue planner is the world&apos;s first smart event planning software,
-        that offers integrated safety and security planning in an intuitive,
-        visually driven and auditable programme.
+        Venue Planner is the world&apos;s first smart event planning software,
+        offering seamless integration of safety and security planning in an
+        intuitive, visually-driven, and fully auditable platform.
       </Paragraph>
-      <Paragraph>I worked on the web UI and backend.</Paragraph>
+      <Paragraph>
+        I contributed to both the web UI and backend development.
+      </Paragraph>
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
