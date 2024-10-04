@@ -5,6 +5,7 @@ import { WorkGridItem } from '../components/grid-item'
 
 import thumbMelio from '../public/images/works/melio-eyecatch.png'
 import thumbVenuePlanner from '../public/images/works/venue-planner-eyecatch.png'
+import thumbSoccerStars from '../public/images/works/soccer-stars-eyecatch.png'
 
 const Works = () => (
   <Layout title="Works">
@@ -26,6 +27,15 @@ const Works = () => (
             thumbnail={thumbVenuePlanner}
           >
             World&apos;s first smart event planning software.
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem
+            id="soccer-stars"
+            title="Soccer Stars"
+            thumbnail={thumbSoccerStars}
+          >
+            Nation&apos;s most popular soccer community website.
           </WorkGridItem>
         </Section>
       </SimpleGrid>

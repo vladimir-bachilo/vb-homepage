@@ -12,24 +12,27 @@ import { Paragraph } from '../../components/paragraph'
 import { Layout } from '../../components/layouts/article'
 
 const Work = () => (
-  <Layout title="Venue Planner">
+  <Layout title="Soccer Stars">
     <Container>
       <Title>
-        Venue Planner <Badge>2018-2019</Badge>
+        Soccer Stars <Badge>2018</Badge>
       </Title>
       <Paragraph>
-        Venue Planner is the world&apos;s first smart event planning software,
-        offering seamless integration of safety and security planning in an
-        intuitive, visually-driven, and fully auditable platform.
+        Soccer Stars is the nation&apos;s leading children&apos;s soccer program
+        for ages 1 to 12+. The program focuses on helping kids develop their
+        soccer skills and improve gross motor coordination. Expert coaches
+        create a fun, non-competitive, and educational environment, ensuring
+        that each child builds self-confidence and essential physical literacy
+        in every session.
       </Paragraph>
       <Paragraph>
-        I contributed to both the web UI and backend development.
+        In the past, I&apos;ve developed a design system and website.
       </Paragraph>
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://venue-planner.com/en/">
-            https://venue-planner.com/en/ <ExternalLinkIcon mx="2px" />
+          <Link href="https://soccerstars.com/">
+            https://soccerstars.com/ <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
@@ -39,12 +42,12 @@ const Work = () => (
         <ListItem>
           <Meta>Stack</Meta>
           <span>
-            ReactJS / MobX / TypeScript / D3JS / ThreeJS / Webpack / PostCSS
+            JavaScript / HTML / CSS / jQuery / Webpack / Flickity / Slick JS
           </span>
         </ListItem>
       </List>
 
-      <WorkImage src="/images/works/venue-planner-01.png" alt="Venue Planner" />
+      <WorkImage src="/images/works/soccer-stars-01.png" alt="Soccer Stars" />
       <Divider my={3} />
     </Container>
   </Layout>

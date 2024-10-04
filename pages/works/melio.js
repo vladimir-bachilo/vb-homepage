@@ -25,7 +25,8 @@ const Work = () => (
         receivables through a fully digital platform. It provides an all-in-one
         solution for sending and receiving payments, helping to optimize cash
         flow, minimize late payment fees, and reduce the time spent on
-        administrative tasks. I joined the project to contribute to the development of an extensive list of new features.
+        administrative tasks. I joined the project to contribute to the
+        development of an extensive list of new features.
       </Paragraph>
       <List ml={4} my={4}>
         <ListItem>
@@ -42,8 +43,8 @@ const Work = () => (
           <Meta>Stack</Meta>
           <span>
             ReactJS / Redux / NodeJS / TypeScript / React Query / Postmark / AWS
-            / Datadog / Athena / Coralogix / Sentry / Lottie / Jenkins / Chakra
-            UI
+            / Datadog / Coralogix / Sentry / FullStory / Lottie /
+            Jenkins / Chakra UI
           </span>
         </ListItem>
         <ListItem>
