@@ -9,7 +9,7 @@ import thumbSoccerStars from '../public/images/works/soccer-stars-eyecatch.png'
 
 const Works = () => (
   <Layout title="Works">
-    <Container>
+    <Container maxW="xl">
       <Heading as="h3" fontSize={20} mb={4}>
         Collaborations
         <Divider my={6} />

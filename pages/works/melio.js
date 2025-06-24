@@ -16,9 +16,9 @@ import { Layout } from '../../components/layouts/article'
 
 const Work = () => (
   <Layout title="Melio">
-    <Container>
+    <Container maxW="xl">
       <Title>
-        Melio <Badge>2019-</Badge>
+        Melio <Badge>2019-Present</Badge>
       </Title>
       <Paragraph>
         Melio enables businesses to streamline their B2B payments and
