@@ -6,7 +6,6 @@ import {
   ListItem,
   Divider
 } from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/work'
 import { Paragraph } from '../../components/paragraph'
 import { Layout } from '../../components/layouts/article'
@@ -29,7 +28,7 @@ const Work = () => (
         <ListItem>
           <Meta>Website</Meta>
           <Link href="https://venue-planner.com/en/">
-            https://venue-planner.com/en/ <ExternalLinkIcon mx="2px" />
+            https://venue-planner.com/en/
           </Link>
         </ListItem>
         <ListItem>

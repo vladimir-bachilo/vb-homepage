@@ -9,7 +9,6 @@ import {
   Center,
   UnorderedList
 } from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/work'
 import { Paragraph } from '../../components/paragraph'
 import { Layout } from '../../components/layouts/article'
@@ -32,7 +31,7 @@ const Work = () => (
         <ListItem>
           <Meta>Website</Meta>
           <Link href="https://meliopayments.com/">
-            https://meliopayments.com/ <ExternalLinkIcon mx="2px" />
+            https://meliopayments.com/
           </Link>
         </ListItem>
         <ListItem>
@@ -43,14 +42,14 @@ const Work = () => (
           <Meta>Stack</Meta>
           <span>
             ReactJS / Redux / NodeJS / TypeScript / React Query / Postmark / AWS
-            / Datadog / Coralogix / Sentry / FullStory / Lottie /
-            Jenkins / Chakra UI
+            / Datadog / Coralogix / Sentry / FullStory / Lottie / Jenkins /
+            Chakra UI
           </span>
         </ListItem>
         <ListItem>
           <Meta>Press room</Meta>
           <Link href="https://meliopayments.com/press-room/">
-            https://meliopayments.com/press-room/ <ExternalLinkIcon mx="2px" />
+            https://meliopayments.com/press-room/
           </Link>
         </ListItem>
       </List>
@@ -62,26 +61,29 @@ const Work = () => (
       <UnorderedList my={4}>
         <ListItem>
           <Link href="https://www.usatoday.com/money/blueprint/business/finance/best-free-accounting-software/">
-            <Badge mr={2}>USA Today</Badge>
+            <Badge mr={2} verticalAlign="none">
+              USA Today
+            </Badge>
             Best Free Accounting Software in 2024
-            <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
 
         <ListItem>
           <Link href="https://thefinancialtechnologyreport.com/the-top-100-financial-technology-companies-of-2023/">
-            <Badge mr={2}>The Financial TR</Badge>
+            <Badge mr={2} verticalAlign="none">
+              The Financial TR
+            </Badge>
             The Top 100 Financial Technology Companies of 2023
-            <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
 
         <ListItem>
           <Link href="https://www.businesswire.com/news/home/20231023277793/en/">
-            <Badge mr={2}>Businesswire</Badge>
+            <Badge mr={2} verticalAlign="none">
+              Businesswire
+            </Badge>
             Fiserv and Melio Partner to Streamline Accounts Payable and
             Receivable for Small Businesses
-            <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
       </UnorderedList>

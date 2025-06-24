@@ -30,7 +30,7 @@ export const Logo = () => {
           <Text
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
             letterSpacing={'tighter'}
-            fontFamily='M PLUS Rounded 1c", sans-serif'
+            fontFamily='Input Mono", monospace'
             fontWeight="bold"
           >
             Vladimir Bachilo
