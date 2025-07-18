@@ -4,13 +4,10 @@ import { LaptopCode } from './icons/laptop-code'
 import styled from '@emotion/styled'
 
 const LogoBox = styled.span`
-  font-weight: bold;
   font-size: 18px;
   display: inline-flex;
   align-items: center;
   height: 30px;
-  line-height: 20px;
-  padding: 10px;
 
   > svg {
     transition: 200ms ease;
@@ -29,8 +26,6 @@ export const Logo = () => {
         <Box ml={1}>
           <Text
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-            letterSpacing={'tighter'}
-            fontFamily='Input Mono", monospace'
             fontWeight="bold"
           >
             Vladimir Bachilo

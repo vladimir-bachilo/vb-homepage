@@ -1,5 +1,5 @@
 export const Fonts = () => (
   <style jsx global>{`
-    @import url('https://cdn.jsdelivr.net/npm/@fontsource/input-mono/index.css');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
   `}</style>
 )

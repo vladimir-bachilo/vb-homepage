@@ -6,7 +6,8 @@ import {
   Box,
   Button,
   Flex,
-  useColorModeValue
+  useColorModeValue,
+  Divider
 } from '@chakra-ui/react'
 import { Paragraph } from '../components/paragraph'
 import { BioYear } from '../components/bio'
@@ -24,7 +25,7 @@ const Home = () => (
         mb={6}
         p={3}
         textAlign="center"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.100')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
         Hello, there!
@@ -32,7 +33,7 @@ const Home = () => (
 
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
-          <Heading as="h2" variant="page-title">
+          <Heading as="h3" variant="section-title">
             Vladimir Bachilo
           </Heading>
           <p>Digital Craftsman ( Developer / Designer )</p>
@@ -44,7 +45,7 @@ const Home = () => (
           textAlign="center"
         >
           <Box
-            borderColor="whiteAlpha.800"
+            borderColor="whiteAlpha.900"
             borderWidth={2}
             borderStyle="solid"
             w="100px"
@@ -79,10 +80,10 @@ const Home = () => (
           .
         </Paragraph>
         <Paragraph>
-          Beyond programming, I enjoy photography and traveling. Currently based
-          in Minsk, I&apos;m always open to connecting - whether you&apos;re
-          interested in collaborating or just grabbing a coffee, feel free to
-          reach out!
+          Outside of coding, I enjoy miniature painting and traveling. Currently
+          based in Minsk, I&apos;m always open to connecting - whether
+          you&apos;re interested in collaborating or just grabbing a coffee,
+          feel free to reach out!
         </Paragraph>
       </Section>
 
@@ -184,6 +185,7 @@ const Home = () => (
           </Link>
         </Box>
       </Section>
+      <Divider my={3} />
     </Container>
   </Layout>
 )
