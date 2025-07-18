@@ -33,7 +33,7 @@ const Home = () => (
 
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
-          <Heading as="h3" variant="section-title">
+          <Heading as="h3" variant="page-title">
             Vladimir Bachilo
           </Heading>
           <p>Digital Craftsman ( Developer / Designer )</p>

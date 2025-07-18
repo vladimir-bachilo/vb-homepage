@@ -27,6 +27,7 @@ export const Logo = () => {
           <Text
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
             fontWeight="bold"
+            letterSpacing={'tighter'}
           >
             Vladimir Bachilo
           </Text>
