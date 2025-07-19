@@ -15,7 +15,7 @@ import { Layout } from '../../components/layouts/article'
 
 const Work = () => (
   <Layout title="Melio">
-    <Container maxW="xl">
+    <Container maxW="xxl">
       <Title>
         Melio <Badge>2019-Present</Badge>
       </Title>

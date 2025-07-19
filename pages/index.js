@@ -15,11 +15,10 @@ import { Layout } from '../components/layouts/article'
 import { Section } from '../components/section'
 import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import { AiFillSpotify } from 'react-icons/ai'
-import Image from 'next/image'
 
 const Home = () => (
   <Layout>
-    <Container maxW="xl">
+    <Container maxW="xxl">
       <Box
         borderRadius="lg"
         mb={6}
@@ -32,36 +31,21 @@ const Home = () => (
       </Box>
 
       <Box display={{ md: 'flex' }}>
-        <Box flexGrow={1}>
-          <Heading as="h3" variant="page-title">
+        <Box flexGrow={1} pb={5}>
+          <Heading as="h2" size="md" pb={6}>
             Vladimir Bachilo
           </Heading>
-          <p>Digital Craftsman ( Developer / Designer )</p>
+          <p>
+            <i>Crafting interfaces</i>. Building polished software and web
+            experiences.
+          </p>
         </Box>
         <Box
           flexShrink={0}
           mt={{ base: 4, md: 0 }}
           ml={{ md: 6 }}
           textAlign="center"
-        >
-          <Box
-            borderColor="whiteAlpha.900"
-            borderWidth={2}
-            borderStyle="solid"
-            w="100px"
-            h="100px"
-            display="inline-block"
-            borderRadius="full"
-            overflow="hidden"
-          >
-            <Image
-              src="/images/vladimir.jpg"
-              alt="Profile image"
-              width="100"
-              height="100"
-            />
-          </Box>
-        </Box>
+        ></Box>
       </Box>
 
       <Section delay={0.1}>

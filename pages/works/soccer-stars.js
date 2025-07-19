@@ -12,7 +12,7 @@ import { Layout } from '../../components/layouts/article'
 
 const Work = () => (
   <Layout title="Soccer Stars">
-    <Container maxW="xl">
+    <Container maxW="xxl">
       <Title>
         Soccer Stars <Badge>2018</Badge>
       </Title>
