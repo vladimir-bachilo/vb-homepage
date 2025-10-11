@@ -87,7 +87,10 @@ const Home = () => (
           </Paragraph>
           <Paragraph>
             &#8226;{' '}
-            <Link href="https://github.com/rolling-scopes/school/blob/gh-pages/2018Q1/Uladzimir_Bachyla.pdf">
+            <Link
+              href="https://github.com/rolling-scopes/school/blob/gh-pages/2018Q1/Uladzimir_Bachyla.pdf"
+              target="_blank"
+            >
               Completed
             </Link>{' '}
             the Rolling Scopes School course.

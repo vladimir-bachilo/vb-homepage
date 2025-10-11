@@ -30,7 +30,7 @@ const Work = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://meliopayments.com/">
+          <Link href="https://meliopayments.com/" target="_blank">
             https://meliopayments.com/
           </Link>
         </ListItem>
@@ -48,7 +48,7 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Press room</Meta>
-          <Link href="https://meliopayments.com/press-room/">
+          <Link href="https://meliopayments.com/press-room/" target="_blank">
             https://meliopayments.com/press-room/
           </Link>
         </ListItem>
@@ -60,7 +60,10 @@ const Work = () => (
 
       <UnorderedList my={4}>
         <ListItem>
-          <Link href="https://www.usatoday.com/money/blueprint/business/finance/best-free-accounting-software/">
+          <Link
+            href="https://www.usatoday.com/money/blueprint/business/finance/best-free-accounting-software/"
+            target="_blank"
+          >
             <Badge mr={2} verticalAlign="none">
               USA Today
             </Badge>
@@ -69,7 +72,10 @@ const Work = () => (
         </ListItem>
 
         <ListItem>
-          <Link href="https://thefinancialtechnologyreport.com/the-top-100-financial-technology-companies-of-2023/">
+          <Link
+            href="https://thefinancialtechnologyreport.com/the-top-100-financial-technology-companies-of-2023/"
+            target="_blank"
+          >
             <Badge mr={2} verticalAlign="none">
               The Financial TR
             </Badge>
@@ -78,7 +84,10 @@ const Work = () => (
         </ListItem>
 
         <ListItem>
-          <Link href="https://www.businesswire.com/news/home/20231023277793/en/">
+          <Link
+            href="https://www.businesswire.com/news/home/20231023277793/en/"
+            target="_blank"
+          >
             <Badge mr={2} verticalAlign="none">
               Businesswire
             </Badge>

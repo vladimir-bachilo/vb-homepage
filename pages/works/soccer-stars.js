@@ -30,7 +30,9 @@ const Work = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://soccerstars.com/">https://soccerstars.com/</Link>
+          <Link href="https://soccerstars.com/" target="_blank">
+            https://soccerstars.com/
+          </Link>
         </ListItem>
         <ListItem>
           <Meta>Platform</Meta>
