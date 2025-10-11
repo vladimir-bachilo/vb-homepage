@@ -17,7 +17,7 @@ const Work = () => (
   <Layout title="Melio">
     <Container maxW="xxl">
       <Title>
-        Melio <Badge>2019-Present</Badge>
+        Melio <Badge>2019-2025</Badge>
       </Title>
       <Paragraph>
         Melio enables businesses to streamline their B2B payments and
