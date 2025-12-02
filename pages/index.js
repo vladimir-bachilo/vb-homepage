@@ -65,7 +65,7 @@ const Home = () => (
         </Paragraph>
         <Paragraph>
           Outside of coding, I enjoy miniature painting and traveling. Currently
-          based in Minsk, I&apos;m always open to connecting - whether
+          based in Warsaw, I&apos;m always open to connecting - whether
           you&apos;re interested in collaborating or just grabbing a coffee,
           feel free to reach out!
         </Paragraph>
@@ -105,9 +105,15 @@ const Home = () => (
           </Paragraph>
         </Box>
         <Box>
-          <BioYear>2019 - Present</BioYear>
+          <BioYear>2019 - 2025</BioYear>
           <Paragraph>
-            &#8226; Working as a full-stack developer at SoftTeco.
+            &#8226; Worked as a full-stack developer at SoftTeco.
+          </Paragraph>
+        </Box>
+        <Box>
+          <BioYear>2025 - Present</BioYear>
+          <Paragraph>
+            &#8226; Working as a full-stack developer at Armada Labs.
           </Paragraph>
         </Box>
       </Section>
