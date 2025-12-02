@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
-import { Box, Container } from '@chakra-ui/react'
+import { Box, Container, useMediaQuery } from '@chakra-ui/react'
 import { Footer } from '../footer'
 import NavBar from '../navbar'
 import { Loader } from '../laptop-loader'
@@ -11,6 +11,8 @@ const LazyLaptop = dynamic(() => import('../laptop'), {
 })
 
 export const Layout = ({ children, router }) => {
+  const [isLargerThanMd] = useMediaQuery('(min-width: 768px)')
+
   return (
     <Box as="main" pb={8}>
       <Head>
@@ -28,8 +30,8 @@ export const Layout = ({ children, router }) => {
 
       <NavBar path={router.asPath} />
 
-      <Container maxW="container.md" pt={14}>
-        <LazyLaptop />
+      <Container maxW="container.md" pt={isLargerThanMd ? 14 : 32}>
+        {isLargerThanMd ? <LazyLaptop /> : null}
         {children}
         <Footer />
       </Container>
