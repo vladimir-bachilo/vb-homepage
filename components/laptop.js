@@ -39,7 +39,7 @@ const Laptop = () => {
       })
       renderer.setPixelRatio(window.devicePixelRatio)
       renderer.setSize(scW, scH)
-      renderer.outputEncoding = THREE.sRGBEncoding
+      renderer.outputColorSpace = THREE.SRGBColorSpace
       container.appendChild(renderer.domElement)
       refRenderer.current = renderer
       const scene = new THREE.Scene()
@@ -69,6 +69,7 @@ const Laptop = () => {
       const controls = new OrbitControls(camera, renderer.domElement)
       controls.autoRotate = true
       controls.target = target
+      controls.enabled = false
 
       loadGLTFModel(scene, urlLaptopGLB, {
         receiveShadow: false,
