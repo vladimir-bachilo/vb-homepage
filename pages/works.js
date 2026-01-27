@@ -3,9 +3,9 @@ import { Layout } from '../components/layouts/article'
 import { Section } from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbMelio from '../public/images/works/melio-eyecatch.png'
-import thumbVenuePlanner from '../public/images/works/venue-planner-eyecatch.png'
-import thumbSoccerStars from '../public/images/works/soccer-stars-eyecatch.png'
+import thumbMelio from '../public/images/works/melio-eyecatch.webp'
+import thumbVenuePlanner from '../public/images/works/venue-planner-eyecatch.webp'
+import thumbSoccerStars from '../public/images/works/soccer-stars-eyecatch.webp'
 
 const Works = () => (
   <Layout title="Works">
@@ -45,4 +45,3 @@ const Works = () => (
 )
 
 export default Works
-export { getServerSideProps } from '../components/chakra'

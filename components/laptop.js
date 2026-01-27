@@ -12,8 +12,7 @@ const Laptop = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
   const refRenderer = useRef()
-  const urlLaptopGLB =
-    (process.env.NODE_ENV === 'production' ? '' : '') + '/mac.glb'
+  const urlLaptopGLB = '/mac.glb'
 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer
@@ -34,10 +33,11 @@ const Laptop = () => {
       const scH = container.clientHeight
 
       const renderer = new THREE.WebGLRenderer({
-        antialias: true,
-        alpha: true
+        antialias: false,
+        alpha: true,
+        powerPreference: 'high-performance'
       })
-      renderer.setPixelRatio(window.devicePixelRatio)
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
       renderer.setSize(scW, scH)
       renderer.outputColorSpace = THREE.SRGBColorSpace
       container.appendChild(renderer.domElement)

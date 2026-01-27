@@ -1,5 +1,9 @@
-export const Fonts = () => (
-  <style jsx global>{`
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-  `}</style>
-)
+import { Inter } from 'next/font/google'
+
+export const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  display: 'swap',
+})
+
+export const Fonts = () => null

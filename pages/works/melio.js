@@ -97,12 +97,11 @@ const Work = () => (
         </ListItem>
       </UnorderedList>
 
-      <WorkImage src="/images/works/melio-01.png" alt="Melio" />
-      <WorkImage src="/images/works/melio-02.png" alt="Melio" />
+      <WorkImage src="/images/works/melio-01.webp" alt="Melio" />
+      <WorkImage src="/images/works/melio-02.webp" alt="Melio" />
       <Divider my={3} />
     </Container>
   </Layout>
 )
 
 export default Work
-export { getServerSideProps } from '../../components/chakra'

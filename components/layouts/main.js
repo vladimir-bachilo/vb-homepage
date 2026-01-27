@@ -11,6 +11,8 @@ const LazyLaptop = dynamic(() => import('../laptop'), {
 })
 
 export const Layout = ({ children, router }) => {
+  const isHomePage = router.pathname === '/'
+  
   return (
     <Box as="main" pb={8}>
       <Head>
@@ -20,6 +22,7 @@ export const Layout = ({ children, router }) => {
         <meta name="author" content="vladimir-bachilo" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        {isHomePage && <link rel="preload" href="/mac.glb" as="fetch" crossOrigin="anonymous" />}
         <meta property="og:site_name" content="Vladimir Bachilo" />
         <meta name="og:title" content="Vladimir Bachilo" />
         <meta property="og:type" content="website" />

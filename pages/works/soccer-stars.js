@@ -46,11 +46,10 @@ const Work = () => (
         </ListItem>
       </List>
 
-      <WorkImage src="/images/works/soccer-stars-01.png" alt="Soccer Stars" />
+      <WorkImage src="/images/works/soccer-stars-01.webp" alt="Soccer Stars" />
       <Divider my={3} />
     </Container>
   </Layout>
 )
 
 export default Work
-export { getServerSideProps } from '../../components/chakra'
