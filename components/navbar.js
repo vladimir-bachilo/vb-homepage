@@ -106,15 +106,33 @@ const Navbar = props => {
                 aria-label="Options"
               />
               <MenuList>
-                <MenuItem as={MenuLink} href="/">
+                <MenuItem
+                  as={MenuLink}
+                  href="/"
+                  _focus={{ boxShadow: 'none' }}
+                  _active={{
+                    bg: useColorModeValue('gray.100', 'whiteAlpha.100')
+                  }}
+                >
                   About
                 </MenuItem>
-                <MenuItem as={MenuLink} href="/works">
+                <MenuItem
+                  as={MenuLink}
+                  href="/works"
+                  _focus={{ boxShadow: 'none' }}
+                  _active={{
+                    bg: useColorModeValue('gray.100', 'whiteAlpha.100')
+                  }}
+                >
                   Works
                 </MenuItem>
                 <MenuItem
                   as={Link}
                   href="https://github.com/vladimir-bachilo/vb-homepage"
+                  _focus={{ boxShadow: 'none' }}
+                  _active={{
+                    bg: useColorModeValue('gray.100', 'whiteAlpha.100')
+                  }}
                 >
                   View Source
                 </MenuItem>
