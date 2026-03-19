@@ -135,17 +135,6 @@ const Home = () => (
             </Link>
           </Box>
           <Box>
-            <Link href="https://instagram.com/one.crew" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoInstagram />}
-              >
-                Instagram
-              </Button>
-            </Link>
-          </Box>
-          <Box>
             <Link href="https://www.linkedin.com/in/bachilo" target="_blank">
               <Button
                 variant="ghost"
@@ -153,6 +142,17 @@ const Home = () => (
                 leftIcon={<IoLogoLinkedin />}
               >
                 Linkedin
+              </Button>
+            </Link>
+          </Box>
+          <Box>
+            <Link href="https://instagram.com/one.crew" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoLogoInstagram />}
+              >
+                Instagram
               </Button>
             </Link>
           </Box>
