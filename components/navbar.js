@@ -79,6 +79,9 @@ const Navbar = props => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
+          <LinkItem href="/articles" path={path}>
+            Articles
+          </LinkItem>
         </Stack>
 
         <Box flex={1} align="right">
@@ -112,6 +115,16 @@ const Navbar = props => {
                   }}
                 >
                   Works
+                </MenuItem>
+                <MenuItem
+                  as={MenuLink}
+                  href="/articles"
+                  _focus={{ boxShadow: 'none' }}
+                  _active={{
+                    bg: useColorModeValue('gray.100', 'whiteAlpha.100')
+                  }}
+                >
+                  Articles
                 </MenuItem>
               </MenuList>
             </Menu>
