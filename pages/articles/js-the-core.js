@@ -63,7 +63,7 @@ const LangSwitch = ({ lang, setLang }) => (
   </ButtonGroup>
 )
 
-const TableOfContents = ({ toc }) => {
+const TableOfContents = ({ toc, lang }) => {
   const borderColor = useColorModeValue('gray.200', 'gray.700')
   const bg = useColorModeValue('whiteAlpha.600', 'whiteAlpha.50')
   return (
@@ -82,7 +82,7 @@ const TableOfContents = ({ toc }) => {
         textTransform="uppercase"
         letterSpacing="wider"
       >
-        Contents
+        {lang === 'ru' ? 'Содержание' : 'Contents'}
       </Text>
       <OrderedList spacing={1} pl={2}>
         {toc.map(item => (
@@ -105,7 +105,9 @@ const JSTheCoreArticle = () => {
     <Layout title="JavaScript. The Core">
       <Container maxW="xxl">
         <Section>
-          <ArticleTitle>JavaScript. The Core</ArticleTitle>
+          <ArticleTitle>
+            {lang === 'ru' ? 'JavaScript. Ядро' : 'JavaScript. The Core'}
+          </ArticleTitle>
           <Box mb={2}>
             <Badge colorScheme="teal" mr={2}>
               ECMAScript
@@ -116,7 +118,7 @@ const JSTheCoreArticle = () => {
           </Box>
           <Divider my={4} />
           <LangSwitch lang={lang} setLang={setLang} />
-          <TableOfContents toc={toc} />
+          <TableOfContents toc={toc} lang={lang} />
           {lang === 'en' ? <ContentEN /> : <ContentRU />}
         </Section>
       </Container>

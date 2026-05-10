@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import Head from 'next/head'
+import ScrollToTop from '../scroll-to-top'
 
 const variants = {
   hidden: { opacity: 0, x: 0, y: 20 },
@@ -26,6 +27,7 @@ export const Layout = ({ children, title }) => {
           </Head>
         )}
         {children}
+        <ScrollToTop />
       </>
     </motion.article>
   )
