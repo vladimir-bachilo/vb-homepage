@@ -16,8 +16,14 @@ export const ArticleGridItem = ({ children, id, title, tag, href }) => {
   const descColor = useColorModeValue('gray.600', 'gray.400')
   const target = href || `/articles/${id}`
   return (
-    <Box w="100%">
-      <LinkBox as={NextLink} href={target} scroll={false} cursor="pointer">
+    <Box w="100%" h="100%">
+      <LinkBox
+        as={NextLink}
+        href={target}
+        scroll={false}
+        cursor="pointer"
+        h="100%"
+      >
         <Box
           borderRadius="lg"
           p={5}
@@ -26,6 +32,7 @@ export const ArticleGridItem = ({ children, id, title, tag, href }) => {
           borderColor={borderColor}
           _hover={{ bg: cardBgHover }}
           transition="background 0.2s"
+          h="100%"
         >
           {tag && (
             <Badge colorScheme="teal" mb={2}>

@@ -10,8 +10,19 @@ const Articles = () => (
         Articles
         <Divider my={6} />
       </Heading>
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section>
+      <SimpleGrid columns={[1, 1, 2]} gap={6} alignItems="stretch">
+        <Section style={{ height: '100%', marginBottom: 0 }}>
+          <ArticleGridItem
+            id="aspire-monorepo"
+            title="Why Aspire Was the Right Choice for Our Monorepo"
+            tag=".NET"
+          >
+            How .NET Aspire solves local orchestration for a monorepo with two
+            React apps and one ASP.NET Core API — one command to start
+            everything, free distributed tracing, and no .env files.
+          </ArticleGridItem>
+        </Section>
+        <Section style={{ height: '100%', marginBottom: 0 }}>
           <ArticleGridItem
             id="js-the-core"
             title="JavaScript. The Core"
