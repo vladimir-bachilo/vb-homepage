@@ -3,6 +3,7 @@ import { Layout } from '../components/layouts/article'
 import { Section } from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
+import thumbEasternPointTrust from '../public/images/works/ep-trust-company-eyecatch.webp'
 import thumbMelio from '../public/images/works/melio-eyecatch.webp'
 import thumbVenuePlanner from '../public/images/works/venue-planner-eyecatch.webp'
 import thumbSoccerStars from '../public/images/works/soccer-stars-eyecatch.webp'
@@ -15,6 +16,15 @@ const Works = () => (
         <Divider my={6} />
       </Heading>
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <Section>
+          <WorkGridItem
+            id="eastern-point-trust"
+            title="Eastern Point Trust"
+            thumbnail={thumbEasternPointTrust}
+          >
+            End-to-end trust management platform for clients and admins.
+          </WorkGridItem>
+        </Section>
         <Section>
           <WorkGridItem id="melio" title="Melio" thumbnail={thumbMelio}>
             Intelligent, easy and free accounts payable software.
